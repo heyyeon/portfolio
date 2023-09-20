@@ -27,43 +27,26 @@ $(document).ready(function(){
 
 
 
-
-  // $(window).scroll(function(){
-  //   let main_about = $('#about').offset().top;
-  //   let main_work = $('#work').offset().top;
-  //   let main_con = $('#contact').offset().top;
-
-  //   let scrollTop = $(this).scrollTop();
-
-  //   if(scrollTop >= main_about && scrollTop < main_work){
-  //     $('.btn_work .btn_contact').removeClass('active');
-  //     $('.btn_about').addClass('active');
-  //   }else if(scrollTop >= main_work && scrollTop < main_con){
-  //     $('.btn_contact .btn_about').removeClass('active');
-  //     $('.btn_work').addClass('active');
-  //   }else if(scrollTop >= main_con){
-  //     $('.btn_work .btn_about').removeClass('active');
-  //     $('.btn_contact').addClass('active');
-    
-  //   }else{
-  //     $('.btn_work .btn_about .btn_contact').removeClass('active');
-  //   }
-
-  // });
-
-  $(window).scroll(function(){
+  $(window).scroll(function(e){
+    e.preventDefault;
     let sPos = $(this).scrollTop();
     console.log(sPos);
 
 
-    if(sPos>=900 && sPos<1800){
-      $('.btn_about').fadeIn(100).css({'position':'fixed','z-index':'14'});
+    if(sPos>=900 && sPos<=1800){
+      $('.btn_work, .btn_contact').fadeOut();
+      $('.btn_about').fadeIn();
+
+    }else if(sPos>=1805 && sPos<=3900){
+      $('.btn_about, .btn_contact').fadeOut();
+      $('.btn_work').fadeIn();
+
+    }else if(sPos>=3905){
+    $('.btn_work, .btn_about').fadeOut();
+    $('.btn_contact').fadeIn();
     }else{
-      $('.btn_about').hide(100);
+      $('.btn').fadeOut();
     }
-
-
-
   });
 });
 
