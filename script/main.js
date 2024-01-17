@@ -51,7 +51,7 @@ $(document).ready(function(){
   });
 
 
-$('.style').click(function(){
+$('.style, .real').click(function(){
   swal("공사중!","불편을 드려 죄송합니다","error");
   return false;
 });
