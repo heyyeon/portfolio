@@ -29,24 +29,34 @@ $(document).ready(function(){
 
   $(window).scroll(function(e){
     e.preventDefault;
-    let sPos = $(this).scrollTop();
+    let sPos=Math.ceil((($(this).scrollTop()/$(this).height())*100));
     console.log(sPos);
 
 
-    if(sPos>=900 && sPos<=1800){
+
+    if(sPos>=93 && sPos<=174){
       $('.btn_work, .btn_contact').fadeOut();
       $('.btn_about').fadeIn();
 
-    }else if(sPos>=1805 && sPos<=3900){
+    }else if(sPos>=176 && sPos<=428){
       $('.btn_about, .btn_contact').fadeOut();
       $('.btn_work').fadeIn();
 
-    }else if(sPos>=3905){
+    }else if(sPos>=430){
     $('.btn_work, .btn_about').fadeOut();
     $('.btn_contact').fadeIn();
     }else{
       $('.btn').fadeOut();
     }
   });
+
+
+$('.style').click(function(){
+  swal("공사중!","불편을 드려 죄송합니다","error");
+  return false;
+});
+
+
+
 });
 
