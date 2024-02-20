@@ -121,9 +121,18 @@
               <li><span>참여도</span>80%(팀플작업)</li>
             </ul>
             <div class="btn_down">
-              <a href="" title="스타일가이드" class="style">Styleguide</a>
+              <!-- <a href="./images/style_museum.png" title="스타일가이드" class="style" id="openStyleModal">Styleguide</a> -->
+              <button id="openStyleModal" class="style-button">Styleguide</button>
               <a href="" title="피그마" class="figma real">figma</a>
             </div>
+
+            <div id="styleModal" class="modal">
+              <div class="modal-content">
+                <span class="close" id="closeStyleModal">&times;</span>
+                <img src="./images/style.png" alt="Styleguide Image" id="styleModalImage">
+              </div>
+            </div>
+
           </div>
           <div class="m_pic">
             <img src="./images/museum.png" alt="" class="pic">
