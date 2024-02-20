@@ -31,9 +31,6 @@
   <!-- 제이쿼리 쿠키파일 -->
   <script src="./script/jquery.cookie.js"></script>
 
-  <!-- 제이쿼리 공통 스크립트 -->
-  <script src="./script/layout.js"></script>
-
   <!-- 콘텐츠 스크립트 -->
   <script src="./script/main.js"></script>
 
@@ -129,7 +126,7 @@
             <div id="styleModal" class="modal">
               <div class="modal-content">
                 <span class="close" id="closeStyleModal">&times;</span>
-                <img src="./images/style.png" alt="Styleguide Image" id="styleModalImage">
+                <img src="./images/style_museum.png" alt="Styleguide Image" id="styleModalImage">
               </div>
             </div>
 
@@ -152,9 +149,18 @@
               <li><span>참여도</span>100%(개인작업)</li>
             </ul>
             <div class="btn_down">
-              <a href="" title="스타일가이드" class="style add_s">Styleguide</a>
+              <!-- <a href="./images/style_dunkin.png" title="스타일가이드" class="style add_s">Styleguide</a> -->
+              <button id="openStyleModal" class="style-button">Styleguide</button>
               <a href="https://heyyeon.github.io/dunkin/" title="사이트" class="figma add_f">web</a>
             </div>
+
+            <div id="styleModal" class="modal">
+              <div class="modal-content">
+                <span class="close" id="closeStyleModal">&times;</span>
+                <img src="./images/style_dunkin.png" alt="Styleguide Image" id="styleModalImage">
+              </div>
+            </div>
+
           </div>
         </article>
         <article class="bbang">
@@ -222,4 +228,7 @@
 
   </div>
 </body>
+
+<script src="./script/layout.js"></script>
+
 </html>
