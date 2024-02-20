@@ -163,8 +163,6 @@ header .gnb > li > a {
   right: 13%;
   line-height: 23px;
 }
-.profile_text > dl {
-}
 
 .profile_text > dl > dt {
   font-family: "COCOGOOSE";
@@ -383,11 +381,12 @@ video {
   font-size: 17px;
 }
 
-/* .modal {
+.modal {
   display: none;
   position: fixed;
   top: 0;
   left: 0;
+  z-index: 100;
   width: 100%;
   height: 100%;
   background-color: rgba(0, 0, 0, 0.5);
@@ -395,17 +394,28 @@ video {
 
 .modal-content {
   background-color: #fefefe;
-  margin: 15% auto;
+  margin: 2% auto;
   padding: 20px;
   border: 1px solid #888;
-  width: 80%;
-  position: relative;
+  width: 50%;
+  height: 90%;
+  position: fixed;
+  left: 50%;
+  top: 0;
+  transform: translateX(-50%);
+  overflow: scroll;
+}
+.modal-content > img {
+  width: 90%;
+  position: absolute;
 }
 
 .close {
-  color: #aaa;
-  float: right;
-  font-size: 28px;
+  color: #000;
+  position: absolute;
+  right: 2%;
+  top: 5px;
+  font-size: 38px;
   font-weight: bold;
   cursor: pointer;
 }
@@ -414,4 +424,10 @@ video {
 .close:focus {
   color: black;
   text-decoration: none;
-} */
+}
+
+/* 모달 뒤 스크롤 막기 */
+.stop-scroll {
+  height: 100%;
+  overflow: hidden;
+}
