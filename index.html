@@ -149,15 +149,14 @@
               <li><span>참여도</span>100%(개인작업)</li>
             </ul>
             <div class="btn_down">
-              <!-- <a href="./images/style_dunkin.png" title="스타일가이드" class="style add_s">Styleguide</a> -->
-              <button id="openStyleModal" class="style-button">Styleguide</button>
+              <button id="openStyleModal1" class="style-button">Styleguide</button>
               <a href="https://heyyeon.github.io/dunkin/" title="사이트" class="figma add_f">web</a>
             </div>
 
-            <div id="styleModal" class="modal">
+            <div id="styleModal1" class="modal">
               <div class="modal-content">
-                <span class="close" id="closeStyleModal">&times;</span>
-                <img src="./images/style_dunkin.png" alt="Styleguide Image" id="styleModalImage">
+                <span class="close" id="closeStyleModal1">&times;</span>
+                <img src="./images/style_dunkin.png" alt="Styleguide Image" id="styleModalImage1">
               </div>
             </div>
 
@@ -174,9 +173,17 @@
               <li><span>참여도</span>80%(팀플작업)</li>
             </ul>
             <div class="btn_down">
-              <a href="" title="스타일가이드" class="style">Styleguide</a>
+              <button id="openStyleModal2" class="style-button">Styleguide</button>
               <a href="https://heyyeon.github.io/bbang/" title="사이트" class="figma">web</a>
             </div>
+
+            <div id="styleModal2" class="modal">
+              <div class="modal-content">
+                <span class="close" id="closeStyleModal2">&times;</span>
+                <img src="./images/style_bbang.png" alt="Styleguide Image" id="styleModalImage2">
+              </div>
+            </div>
+
           </div>
           <div class="b_pic">
             <img src="./images/bbang.png" alt="" class="pic">
@@ -196,9 +203,17 @@
               <li><span>참여도</span>100%(개인작업)</li>
             </ul>
             <div class="btn_down">
-              <a href="" title="스타일가이드" class="style add_s">Styleguide</a>
+              <button id="openStyleModal3" class="style-button">Styleguide</button>
               <a href="https://heyyeon.github.io/studio/" title="사이트" class="figma add_f">web</a>
             </div>
+
+            <div id="styleModal3" class="modal">
+              <div class="modal-content">
+                <span class="close" id="closeStyleModal3">&times;</span>
+                <img src="./images/style_studio.png" alt="Styleguide Image" id="styleModalImage3">
+              </div>
+            </div>
+            
           </div>
         </article>
       </section>
@@ -211,9 +226,20 @@
           </video>
 
         <div class="con_txt">
-          <a><span>contact me</span></a>
-          <a><span>E-mail</span>duslek11&#x0040;naver.com</a>
-          <!-- <a><span>이력서</span>Click me&#33;</a> -->
+          <a>contact me</a>
+          <a>E-mail<span>duslek11&#x0040;naver.com</span></a>
+          <a>이력서
+           <!-- click me 버튼 -->
+            <span class="link" onclick="openModal()">click me</span>
+            <!-- 모달창 -->
+            <div id="myModal" class="modal">
+              <div class="modal-content">
+                <span class="close" onclick="closeModal">&times;</span>
+                <!-- 모달 내용 -->
+                <iframe id="documentFrame" width="100%" height="400px" type="application/pdf"></iframe>
+            </div>
+          </div>
+          </a> 
         </div>
         <p class="txt01">본 포트폴리오는 비상업적 목적으로 제작되었음을 알려드립니다.</p>
       </section>
