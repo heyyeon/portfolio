@@ -343,19 +343,20 @@ video {
 }
 
 .con_txt a {
+  display: flex;
+  font-family: "Black Han Sans", sans-serif;
+  font-weight: lighter;
+  color: #fff;
+  font-size: 27px;
+  line-height: 45px;
+}
+.con_txt a > span {
   font-family: "Pretendard-Regular";
   font-weight: bold;
   font-size: 20px;
   display: block;
   color: #fff;
-}
-.con_txt a > span {
-  display: inline-block;
-  font-family: "Black Han Sans", sans-serif;
-  font-weight: lighter;
-  color: #fff;
-  font-size: 27px;
-  margin-right: 20px;
+  margin-left: 20px;
   line-height: 40px;
 }
 .txt01 {
@@ -366,6 +367,17 @@ video {
   right: 30%;
   color: #fff;
 }
+
+.link {
+  color: blue;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.linked-document {
+  display: none;
+}
+
 /* 수정 */
 
 .style-button {
