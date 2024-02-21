@@ -351,9 +351,9 @@ video {
   line-height: 45px;
 }
 .con_txt a > span {
-  font-family: "Pretendard-Regular";
+  font-family: "Pretendard-Regular", sans-serif;
   font-weight: bold;
-  font-size: 20px;
+  font-size: 25px;
   display: block;
   color: #fff;
   margin-left: 20px;
@@ -442,4 +442,7 @@ video {
 .stop-scroll {
   height: 100%;
   overflow: hidden;
+}
+.styleModalImage4 > src {
+  margin-top: 10%;
 }
