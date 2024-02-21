@@ -58,17 +58,32 @@ modalCloseBtn3.addEventListener("click", function () {
   body3.classList.remove("stop-scroll");
 });
 
-function openModal() {
-  // 모달창 열기
-  document.getElementById("myModal").style.display = "flex";
+const body4 = document.querySelector("body");
+const modalOpenBtn4 = document.getElementById("openStyleModal4");
+const modalCloseBtn4 = document.getElementById("closeStyleModal4");
+const styleModal4 = document.getElementById("styleModal4");
 
-  // 열고자 하는 문서의 URL을 설정
-  const documentUrl =
-    "https://github.com/heyyeon/click/blob/main/%E1%84%8B%E1%85%B5%E1%86%B7%E1%84%92%E1%85%A8%E1%84%8B%E1%85%A7%E1%86%AB(%E1%84%8B%E1%85%B5%E1%84%85%E1%85%A7%E1%86%A8%E1%84%89%E1%85%A5).pdf";
-  document.getElementById("documentFrame").src = documentUrl;
-}
+modalOpenBtn4.addEventListener("click", function () {
+  styleModal4.style.display = "block";
+  body4.classList.add("stop-scroll");
+});
 
-function closeModal() {
-  // 모달창 닫기
-  document.getElementById("myModal").style.display = "none";
-}
+modalCloseBtn4.addEventListener("click", function () {
+  styleModal4.style.display = "none";
+  body4.classList.remove("stop-scroll");
+});
+
+// function openModal() {
+//   // 모달창 열기
+//   document.getElementById("myModal").style.display = "flex";
+
+//   // 열고자 하는 문서의 URL을 설정
+//   const documentUrl =
+//     "https://github.com/heyyeon/click/blob/main/%E1%84%8B%E1%85%B5%E1%8₩6%B7%E1%84%92%E1%85%A8%E1%84%8B%E1%85%A7%E1%86%AB(%E1%84%8B%E1%85%B5%E1%84%85%E1%85%A7%E1%86%A8%E1%84%89%E1%85%A5).pdf";
+//   document.getElementById("documentFrame").src = documentUrl;
+// }
+
+// function closeModal() {
+//   // 모달창 닫기
+//   document.getElementById("myModal").style.display = "none";
+// }
